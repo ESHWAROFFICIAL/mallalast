@@ -1,0 +1,1333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <button id="openn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+     <nav id="nav" style="display: none;">
+       <button id="closee">X</button>
+       <h1 id="title">Covid-19</h1>
+       <p id="one"><a href="index.html">Home</a></p>
+       <p><a href="solution.html">Solutions</a></p>
+       <p><a href="quiz.html">Quiz</a></p>
+       <p><a href="comments.html">Comments</a></p>
+       <p><a href="about.html">About</a></p>
+     </nav>
+     <h1>About</h1>
+     <p>Covid-19 is spreading very fast and if some restrictions are not followed it will spread even faster. This website is made to spread awareness about this so people get to know how to reduce the fast spreading of covid-19.</p>
+     <br>
+     <h1>Who built this?</h1>
+     <p>Hello, I am , the creator of this website. I am a student at  -------. I study in School of -----. I love coding and playing football. I spend my time mostly gaming, coding and with my parents. I am also a  . I have developed a few games in roblox such as  , . which have came out well.</p>
+    <script src="./about.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments/Feedback</title>
+    <link rel="stylesheet" href="comments.css">
+</head>
+<body>
+    <button id="openn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+     <nav id="nav" style="display: none;">
+       <button id="closee">X</button>
+       <h1 id="title">Covid-19</h1>
+       <p id="one"><a href="index.html">Home</a></p>
+       <p id="one"><a href="solution.html">Solutions</a></p>
+       <p id="one"><a href="quiz.html">Quiz</a></p>
+       <p id="one"><a href="comments.html">Comments</a></p>
+       <p><a href="about.html">About</a></p>
+     </nav>
+     <br>
+     <br>
+    <input id="name" type="text" placeholder="Name">
+    <br>
+    <br>
+    <input id="comment" type="text" placeholder="Comment">
+    <button id="sub">Send</button>
+    <div id="com">
+        <h1 id="ans"></h1>
+    </div>
+     <script src="comments.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreading of Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-container"><a href="#heading" id="top">^</a></div>
+      <button id="openn" style="position: absolute;">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+     <nav id="nav" style="display: none;position: absolute;">
+       <button id="closee">X</button>
+       <h1 id="title" style="display: none;">Covid-19</h1>
+       <p><a href="index.html">Home</a></p>
+       <p><a href="solution.html">Solutions</a></p style="display">
+       <p><a href="quiz.html">Quiz</a></p style="display">
+       <p><a href="comments.html">Comments</a></p style="display">
+        <p><a href="about.html">About</a></p>
+     </nav>
+
+        <header class="heading" id="heading" style="margin: 0;">
+            <h1 class="header">Spreading of Covid-19</h1>
+        </header>
+        <h2>Brief Introduction on Covid-19</h2>
+        <div class="p"><p>Coronavirus disease 2019(COVID-19) is a contagious disease caused by Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-COV-2). The first case was identified in Wuhan, China, in December 2019. It has since spread worldwide, leading to an ongoing pandemic. Symptoms of COVID-19 are variable, but often include fever, cough, fatigue, breathing difficulties, and loss of smell and taste. Symptoms begin one to fourteen days after exposure to the virus. Around one in five infected individuals do not develop any symptoms. While most people have mild symptoms, some people develop Acute Respiratory Distress Syndrome (ARDS). ARDS can be precipitated by cytokine storms, multi-organ failure, septic shock, and blood clots. Longer-term damage to organs (in particular, the lungs and heart) has been observed...<a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" target="blank">Click here to read more</a></p></div>
+        <h2>Issue</h2>
+        <p style="padding-bottom: 30px;">Covid-19 is spreading very fast. If it keeps spreading, the risk of getting infected is high. 
+
+          This can be stopped by following strict restrictions. You can read about these in the "<a href="solution.html">Solutions</a>" page.</p>
+       <footer class="footer">
+  <h1>Covid-19</h1>
+  <p id="footer">Talk to me at <a 
+
+</footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <style>
+        body {
+            background: #333;
+            color: white;
+            font-family: sans-serif;
+            
+        }
+        a {
+            color: white;
+            transition: 0.5s;
+        }
+        a:hover {
+            color: #999;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30vh;
+        }
+    </style>
+    <div>
+    <h1 id="res-text">You scored <span id="result"></span> out of 5.</h1>
+    <h1><a href="index.html">Click here</a> to go back</h1>
+    </div>
+    <script>
+        //Create UrlSearchParam
+        var urlParam = new URLSearchParams(window.location.search)
+        document.getElementById("result").innerHTML = "<b>" + urlParam.get("res") + "</b>"
+    </script>
+</body>
+</html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="top-container"><a href="#heading" id="top">^</a></div>
+    <button id="openn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+     <nav id="nav" style="display: none;">
+       <button id="closee">X</button>
+       <h1 id="title">Covid-19</h1>
+       <p id="one"><a href="index.html">Home</a></p>
+       <p><a href="solution.html">Solutions</a></p>
+       <p><a href="quiz.html">Quiz</a></p>
+       <p><a href="comments.html">Comments</a></p> 
+       <p><a href="about.html">About</a></p>
+     </nav>
+     <h1>Covid-19 Quiz</h1>
+     <h2><b>Q1)</b>What does COVID-19 stand for?</h2>
+       <span><input type="radio" name="qa" id="qa">It's a term for Coronavirus Disease 19, because it's the 19th strain of coronavirus discovered.</span> <br>
+
+      <span><input type="radio" name="qa" id="qa-correct">It's a term that stands for Coronavirus Disease 2019, the year it was first identified.</span>
+     <h2><b>Q2)</b>What other viruses belong to the coronavirus family?</h2>
+      <span><input type="radio" name="qb" id="qb">SARS and influenza</span> <br>
+      <span><input type="radio" name="qb" id="qb-correct">SARS and MERS</span> <br>
+      <span><input type="radio" name="qb" id="qb">SARS and HIV</span> <br>
+     <h2><b>Q3)</b>True or False: A vaccine stimulates your immune system to produce antibodies, like it would if you were exposed to the virus. </h2>
+     <span><input type="radio" name="qc" id="qc-correct">True</span> <br>
+      <span><input type="radio" name="qc" id="qc">False</span> <br>
+     <h2><b>Q4)</b>True or False: The virus is mutating rapidly.</h2>
+      <span><input type="radio" name="qd" id="qd">True</span> <br>
+      <span><input type="radio" name="qd" id="qd-correct">False</span> <br>
+     <h2><b>Q5)</b>How does weather seem to affect the novel coronavirus?</h2>
+      <span><input type="radio" name="qe" id="qe">It spreads faster in summer</span> <br>
+    <span><input type="radio" name="qe" id="qe">It spreads faster during rainy season</span> <br>
+     <span><input type="radio" name="qe" id="qe-correct">It spreads faster in winter</span> <br>
+     <span><input type="radio" name="qe" id="qe">It is not yet known</span> <br>
+     <button id="submit">Submit</button>
+     <script src="./quiz.js"></script>
+</body>
+</html>
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <button id="openn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+     <nav id="nav" style="display: none;">
+       <button id="closee">X</button>
+       <h1 id="title">Covid-19</h1>
+       <p id="one"><a href="index.html">Home</a></p>
+       <p><a href="solution.html">Solutions</a></p>
+       <p><a href="quiz.html">Quiz</a></p>
+       <p><a href="comments.html">Comments</a></p>
+       <p><a href="about.html">About</a></p>
+     </nav>
+    <h1 id="heading">Solutions to Stop the Quick Spreading of Covid-19</h1>
+    <h2>
+        1.
+
+Wear masks in public places and continue to wear while talking to people <br>
+
+2.
+
+Keep minimum distance of 1 meter from each other<br>
+
+3.
+
+Replace masks frequently<br>
+
+4.
+
+Do not directly touch commonly used areas. But if done wash hands with sanitizer and soap
+<br>
+5.
+
+Do not shake hands or hug people<br>
+
+6.
+
+Avoid crowded places<br>
+
+7.
+
+Go out only if required<br>
+
+8.
+
+After coming back from outside prefferably take bath and wear fresh clothes and wash the used ones<br>
+
+9.
+
+Keep away from Covid-19 infected patients<br>
+
+10.
+
+If required to meet Covid-19 patients wear Personal Protection Equipment(PPE)<br>
+
+11.
+
+If one is eligiable for vaccination (healthwise and age wise), it should be taken as per the fixed schedule<br>
+
+12.
+
+One can take the advice of the family doctor before vaccination<br>
+    </h2>
+    <script src="./solution.js"></script>
+    <footer style="z-index: 100;">
+    <h1>Covid-19</h1>
+  <p>Talk to me at <a 
+  </footer>
+</body>
+</html>
+  
+  
+  
+  
+  
+  html
+  
+  
+  
+  
+  
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  background-color: #333333;
+  font-family: sans-serif;
+  color: white;
+}
+#title {
+    margin-top: 30px;
+}
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 1.80em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: white;
+  color: black;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+h1 {
+  font-size: 2.5em;
+  padding-left: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+p {
+  font-size: 1.5em;
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 3em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: black;
+  color: white;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+#ans {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+input[type="text"] {
+  width: 50vw;
+  display: block;
+  margin: 50px 0 0 50px;
+  height: 4vw;
+  font-size: 2vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sub {
+  width: 15vw;
+  height: 3.5vw;
+  font-size: 2vw;
+  margin-left: 20px;
+  background: dodgerblue;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+}
+#ans {
+  margin-left: 30px;
+  color: white;
+}
+@media only screen and (max-width: 762px) {
+  /* For mobile phones: */
+  input[type="text"] {
+    width: 100vw;
+    margin:30px 0 0 0 ;
+    padding: 0;
+    height: 7vh;
+    font-size: 7vw;
+  }
+  #sub {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+  }
+  #ans {
+    text-align: center;
+    font-size: 10vw;
+  }
+}
+body {
+  background: #333333;
+  color: white;
+}
+#title {
+  padding-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+#nav {
+    transition: 700ms linear;
+    opacity: 0;
+    width: 0px;
+    height: 100vh;
+    background: #696969;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#openn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    background: #333;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    #nav p a {
+        font-size: 2.60em;
+        cursor: pointer;
+        transition: 0.5s;
+        font-family: 'Russo one';
+        white-space: no-wrap;
+        color: white;
+        text-decoration: none;
+    }
+
+        #nav p a:hover {
+            color: black;
+        }
+
+*::selection {
+    background: black;
+    color: white;
+}
+
+#nav h1 {
+    font-size: 4em;
+    font-family: 'Russo one';
+    white-space: no-wrap;
+}
+
+#nav p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.line {
+    width: 50%;
+    height: 5px;
+    background: white;
+    margin: 5px;
+    margin-left: 35%;
+}
+
+#nav button {
+    border: none;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    float: right;
+}
+
+*::selection{
+  background: black;
+  color: white;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: 900;
+}
+body {
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+}
+span {
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+
+#submit {
+  margin-left: 50vw;
+  width: 125px;
+  height: 40px;
+  border: none;
+  background: black;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 250ms;
+  font-weight: 700;
+}
+#submit:hover {
+  background: #222;
+}
+input[type="radio"]:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+input[type="radio"] {
+  z-index: 1000000;
+  margin-left: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  #submit {
+    margin-left: 40vw;
+  }
+}
+#title {
+  padding-top: 15px;
+}
+span {
+  line-height: 25px;
+}
+
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+span {
+  white-space: pre-line;
+}
+#top {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  top: 605px;
+  text-decoration: none;
+  font-size: 5em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  background-color: #333333;
+  font-family: sans-serif;
+  color: white;
+}
+#title {
+    margin-top: 30px;
+}
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: white;
+  color: black;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+.heading {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://www.fda.gov/files/covid19-1600x900.jpg');
+    background-size: 100vw 100vh;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+h1 {
+    padding-left: 50px;
+}
+h2 {
+  font-size: 2em;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+p {
+  text-align: center;
+  font-size: 1.5vw;
+  /* margin-bottom: 30px; */
+}
+a {
+  color: white;;
+}
+/* footer {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  background: #e6e6e6;
+  color: black;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer h1 {
+  justify-self: flex-start;
+  margin-left: 30px;
+}
+#footer{
+  margin-left: 40%;
+  font-size: 1em;
+}
+footer a {
+  color: black;
+}
+a {
+  font-size: 3em;
+}
+footer a {
+  font-size: 2vw;
+}
+footer h1 {
+  white-space: nowrap;
+}
+p a {
+  font-size: 1em;
+} */
+
+@media only screen and (max-width: 770px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 943px) {
+  p {
+    font-size: 1em;
+  }
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p a {
+  color: black;
+}
+#top {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  top: 605px;
+  text-decoration: none;
+  font-size: 5em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  background-color: #333333;
+  font-family: sans-serif;
+  color: white;
+}
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: white;
+  color: black;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+.heading {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://www.fda.gov/files/covid19-1600x900.jpg');
+    background-size: 100vw 100vh;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+@media only screen and (max-width: 500px) {
+  .heading {
+    background-size: 100vw 100%;
+    height: 40vh;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+h2 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+p {
+  text-align: center;
+  font-size: 1.5vw;
+  /* margin-bottom: 30px; */
+}
+a {
+  color: white;;
+}
+/* footer {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  background: #e6e6e6;
+  color: black;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer h1 {
+  justify-self: flex-start;
+  margin-left: 30px;
+}
+#footer{
+  margin-left: 40%;
+  font-size: 1em;
+}
+footer a {
+  color: black;
+}
+a {
+  font-size: 3em;
+}
+footer a {
+  font-size: 2vw;
+}
+footer h1 {
+  white-space: nowrap;
+}
+p a {
+  font-size: 1em;
+} */
+
+@media only screen and (max-width: 770px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 943px) {
+  p {
+    font-size: 1em;
+  }
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p a {
+  color: black;
+}
+#title {
+  margin-top: 20px;
+}
+/* back to top */
+#top {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  top: 605px;
+  text-decoration: none;
+  font-size: 5em;
+}
+
+
+
+
+css
+
+
+
+
+
+const nav = document.getElementById("nav")
+const openn = document.getElementById("openn")
+const button = document.getElementById("openn")
+const title = document.getElementById("title")
+const closee = document.getElementById("closee")
+
+openn.onclick=()=>{
+
+if (nav.style.opacity==0)
+{
+  nav.style.opacity="1";
+    nav.style.transition="0.7s linear "
+    nav.style.width="100vw"
+    nav.style.display="block"
+    title.style.display="block";
+    document.body.style.overflow="hidden";
+    button.style.display="none"
+}
+else
+{
+    nav.style.opacity="0";
+    nav.width="0px";
+    document.body.style.overflow="visible"
+  }
+}
+
+closee.onclick=()=>{
+    nav.style.opacity="0"
+    nav.style.width="0px";
+    nav.style.visiblity="hidden";
+    title.style.display="none"
+    document.body.style.overflow="visible"
+    button.style.display="block"
+}
+const nav = document.getElementById("nav")
+const openn = document.getElementById("openn")
+const button = document.getElementById("openn")
+const title = document.getElementById("title")
+const closee = document.getElementById("closee")
+
+openn.onclick=()=>{
+
+if (nav.style.opacity==0)
+{
+  nav.style.opacity="1";
+    nav.style.transition="0.7s linear "
+    nav.style.width="100vw"
+    nav.style.display="block"
+    title.style.display="block";
+    document.body.style.overflow="hidden";
+    button.style.display="none"
+    document.getElementById("one").style.display="block"
+}
+else
+{
+    nav.style.opacity="0";
+    nav.width="0px";
+    document.body.style.overflow="visible"
+  }
+}
+
+closee.onclick=()=>{
+    nav.style.opacity="0"
+    nav.style.width="0px";
+    nav.style.visiblity="hidden";
+    title.style.display="none"
+    button.style.display="block"
+    document.getElementById("one").style.display="none"
+    document.body.style.overflow="visible"
+}
+var d = new Date()
+const name = document.getElementById("name")
+const ans = document.getElementById("ans")
+const val = document.getElementById("comment")
+const sub = document.getElementById("sub")
+sub.onclick=()=>{
+  sessionStorage.setItem("comment", val.value)
+  send()
+}
+
+function send () {
+  var comments = []
+  comments.push(val.value)
+  for (let i = 0;i<comments.length;i++){
+  ans.innerHTML+= "<span>" + d.getHours() + ":" + d.getMinutes() + " " +  name.value + ":" + "<b>" + "     " + "<b>"+comments[i] + "</b>"+"</span>" + "<br>"
+  }
+}
+const nav = document.getElementById("nav")
+const openn = document.getElementById("openn")
+const button = document.getElementById("openn")
+const title = document.getElementById("title")
+const closee = document.getElementById("closee")
+
+openn.onclick=()=>{
+
+if (nav.style.opacity==0)
+{
+  nav.style.opacity="1";
+    nav.style.transition="0.7s linear "
+    nav.style.width="100vw"
+    nav.style.display="block"
+    title.style.display="block";
+    document.body.style.overflow="hidden";
+    button.style.display="none"
+}
+else
+{
+    nav.style.opacity="0";
+    nav.width="0px";
+    document.body.style.overflow="visible"
+  }
+}
+
+closee.onclick=()=>{
+    nav.style.opacity="0"
+    nav.style.width="0px";
+    nav.style.visiblity="hidden";
+    title.style.display="none"
+    document.body.style.overflow="visible";
+    button.style.display="block"
+}
+/Making navbar functional
+const nav = document.getElementById("nav")
+const openn = document.getElementById("openn")
+const button = document.getElementById("openn")
+const title = document.getElementById("title")
+const closee = document.getElementById("closee")
+
+openn.onclick=()=>{
+
+if (nav.style.opacity==0)
+{
+  nav.style.opacity="1";
+    nav.style.width="100vw"
+    nav.style.display="block"
+    title.style.display="block";
+    document.body.style.overflow = "hidden";
+    document.getElementById("one").style.display="block"
+}
+}
+
+closee.onclick=()=>{
+    nav.style.opacity="0"
+    nav.style.width="0px";
+    title.style.display = "none"
+    document.body.style.overflow="visible"
+    document.getElementById("one").style.display="none"
+}
+//Evaluating the form
+//Send using ?in the url in the end
+
+//Submit button
+const submit = document.getElementById("submit")
+
+//Calculated score (default = 0)
+var final = 0;
+//Evaluating function
+submit.onclick = () => {
+    //Check if checked==true
+    if (document.getElementById("qa-correct").checked == true) {
+        final++
+    }
+    if (document.getElementById("qb-correct").checked == true) {
+        final++
+    }
+    if (document.getElementById("qc-correct").checked == true) {
+        final++
+    }
+    if (document.getElementById("qd-correct").checked == true) {
+        final++
+    }
+    if (document.getElementById("qe-correct").checked == true) {
+        final++
+    }
+    //redirect 
+    location.href="quiz-result.html?res="+final
+}
+const nav = document.getElementById("nav")
+const openn = document.getElementById("openn")
+const button = document.getElementById("openn")
+const title = document.getElementById("title")
+const closee = document.getElementById("closee")
+
+openn.onclick=()=>{
+
+if (nav.style.opacity==0)
+{
+  nav.style.opacity="1";
+    nav.style.transition="0.7s linear "
+    nav.style.width="100vw"
+    nav.style.display="block"
+    title.style.display="block";
+    document.body.style.overflow="hidden";
+    button.style.display="none"
+}
+else
+{
+    nav.style.opacity="0";
+    nav.width="0px";
+    document.body.style.overflow="visible"
+  }
+}
+
+closee.onclick=()=>{
+    nav.style.opacity="0"
+    nav.style.width="0px";
+    nav.style.visiblity="hidden";
+    title.style.display="none"
+    document.body.style.overflow="visible"
+    button.style.display="block"
+}
+
+
+
+
+
+js
