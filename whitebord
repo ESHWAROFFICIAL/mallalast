@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <input type="color" class="js-color-picker color-picker">
+  <input type="range" min="1" max="72" value="1" class="js-line-range">
+  <label class="js-range-value">1</label>px
+  <canvas width="600" height="400" class="js-paint paint-canvas"></canvas>
+  <button class="clear">Clear</button>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+html
+
+
+
+
+.paint-canvas{
+  border: 1px solid black;
+  display: block;
+  margin: 1rem;
+}
+
+.color-picker{
+  margin: 1rem 1rem 0 1rem;
+}
+
+.clear{
+  font-size: 15px;
+  padding: 16px;
+  margin-left: 250px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+css
+
+
+
+
+
+const paintCanvas = document.querySelector(".js-paint");
+const context = paintCanvas.getContext("2d");
+context.lineCap = '';
+
+const lineWidthRange = document.querySelector(".js-line-range");
+const lineLabel = document.querySelector(".js-range-value");
+
+lineWidthRange.addEventListener("input", (event) => {
+  const width = event.target.value;
+  lineLabel.innerHTML = width;
+  context.lineWidth = width;
+});
+
+const colorPicker = document.querySelector(".js-color-picker");
+
+colorPicker.addEventListener("change", (event) => {
+  context.strokeStyle = event.target.value;
+});
+
+let x = 0, y = 0;
+let isMouseDown = false;
+
+const stopDrawing = () => { isMouseDown = false; }
+
+const startDrawing = event => {
+    isMouseDown = true;   
+   [x, y] = [event.offsetX, event.offsetY];  
+}
+const drawLine = event => {
+    if ( isMouseDown ) {
+        const newX = event.offsetX;
+        const newY = event.offsetY;
+        context.beginPath();
+        context.moveTo( x, y );
+        context.lineTo( newX, newY );
+        context.stroke();
+        x = newX;
+        y = newY;
+    }
+}
+
+
+paintCanvas.addEventListener("mousedown", startDrawing);
+paintCanvas.addEventListener("mousemove", drawLine);
+paintCanvas.addEventListener("mouseup", stopDrawing);
+paintCanvas.addEventListener("mouseout", stopDrawing);
+
+var clear = document.querySelector(".clear");
+
+clear.onclick=(evt)=>{
+  location.reload();
+}
+
+
+
+
+
+
+js
