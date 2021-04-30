@@ -1,0 +1,77 @@
+<div class="canvas">
+  <div class="side-nav">
+    menu goes here
+  </div>
+
+  <div class="main-content">
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <p>content goes here
+  </div>
+</div>
+
+
+
+
+html
+
+
+
+
+:root {
+  --side-nav-width: 230px;
+}
+
+.canvas,
+.side-nav,
+.main-content {
+  min-height: 100vh;
+}
+
+/* canvas */
+.canvas {
+  transition: 0.5s cubic-bezier(0.56, -0.07, 0.58, 1.27) transform;
+}
+
+.canvas.show-nav {
+  transform: translateX(var(--side-nav-width));
+}
+
+/* side nav */
+.side-nav {
+  position: absolute;
+  background: #5eabed;
+  width: var(--side-nav-width);
+  transform: translateX(calc(var(--side-nav-width) * -1));
+}
+
+/* main content */
+.main-content {
+  padding: 50px;
+}
+
+
+
+
+
+css
+
+
+
+
+
+// grab everything we need
+const canvas = document.querySelector(".canvas");
+const button = document.querySelector(".menu-toggle");
+
+// listen for the button click
+button.addEventListener("click", () => {
+  canvas.classList.toggle("show-nav");
+});
+
+
+
+
+
+
+
+js
