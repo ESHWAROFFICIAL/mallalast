@@ -1,0 +1,190 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>| BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png" type="image/x-icon">
+</head>
+<body>
+    <img src= "https://i1.faceprep.in/bmi-calculator-logo.png">
+    <p id="text"> There's no perfect weight that fits everyone. Body Mass Index (BMI) is a measure of how healthy your weight is based on how tall you are. Let’s find out your BMI.</p>
+    
+    <form class="form" id="form" onsubmit="return validateForm()">
+    
+        <div class="Age">
+                <input type="text" placeholder="Enter your Age" class="text-input" id="age" autocomplete="off" required /><p class="text"></p>
+            </div>
+        </div>
+    
+        <div class="Height">
+                <input type="text" placeholder="Enter your height (in centimeters)" class="text-input" id="height" autocomplete="off" required><p class="text"></p>
+        </div>
+
+        <div class="Weight">
+                <input type="text" placeholder="Enter your weight (in kgs)" class="text-input" id="weight" autocomplete="off" required><p class="text"></p>
+            </div>
+        </div>
+
+        <div id="Calculate">
+            <button id="submit">Calculate</button>
+        </div>
+
+    </form>
+    <br>
+    <a href=""> Built with 💙 </a>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+
+
+
+html
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@font-face {
+  font-family: "letters_for_learnersregular";
+  src: url("letters_for_learners-webfont.woff2") format("woff2"),
+    url("letters_for_learners-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-image: url("https://i1.faceprep.in/bmi-background.png");
+  background-size: cover;
+  font-family: "letters_for_learnersregular";
+  font-size: 30px;
+}
+
+img {
+  margin-top: 5vh;
+  width: 20%;
+}
+
+#text {
+  margin: 3vh 32vw;
+}
+
+#height,
+#weight,
+#age {
+  margin: 0 0 3vh 0;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#submit {
+  border: none;
+  background-color: #5f27cd;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 60px 0 0 0;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: dotted;
+  color: black;
+}
+
+
+
+
+
+css
+
+
+
+
+var age = document.getElementById("age");
+var height = document.getElementById("height");
+var weight = document.getElementById("weight");
+var form = document.getElementById("form");
+
+const validateForm = () => {
+  if (age.value == "" || height.value == "" || weight.value == "") {
+    alert("All fields are required!");
+    document.getElementById("submit").removeEventListener("click", countBmi);
+  } else {
+    countBmi();
+  }
+};
+
+document.getElementById("submit").addEventListener("click", validateForm);
+
+const countBmi = () => {
+  var p = [age.value, height.value, weight.value];
+  form.reset();
+
+  var bmi = Number(p[2]) / (((Number(p[1]) / 100) * Number(p[1])) / 100);
+
+  var result = "";
+
+  if (bmi < 18.5) {
+    result = "Oops! You are underweight. You gotta add pounds healthfully 😅";
+  } else if (18.5 <= bmi && bmi <= 24.9) {
+    result = "Yay! You are healty. You can have a pizza or two 🤩";
+  } else if (25 <= bmi && bmi <= 29.9) {
+    result =
+      "You gotta cut down on your unhealty stuff and you will be perfectly healthy 😀";
+  } else if (30 <= bmi && bmi <= 34.9) {
+    result = "Oops! It is high time you train your brain to hate junk food 😨";
+  } else if (30 <= bmi) {
+    result = "Obesity alert! No more junk I say ❌" ;
+  }
+
+  var h1 = document.createElement("h1");
+  var pr = document.createElement("p");
+
+  var t = document.createTextNode(result);
+
+  var b = document.createTextNode("BMI");
+
+  var r = document.createTextNode(parseFloat(bmi).toFixed(2));
+
+  h1.appendChild(b);
+
+  h1.appendChild(r);
+
+  pr.appendChild(t);
+
+  document.body.appendChild(h1);
+
+  document.body.appendChild(pr);
+
+  document.getElementById("submit").removeEventListener("click", countBmi);
+
+  document.getElementById("submit").removeEventListener("click", validateForm);
+};
+
+document.getElementById("submit").addEventListener("click", countBmi);
+
+
+
+
+
+
+js
